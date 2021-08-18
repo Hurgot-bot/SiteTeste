@@ -1,0 +1,117 @@
+*{
+    border: 0;
+    padding: 0;
+    
+}
+
+
+
+body{
+    background: #fff;
+    margin: 0;
+    
+}
+
+/*Header%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5*/
+header{
+    
+}
+
+
+#header-nav a{
+    text-decoration: none;
+    color: #fff;
+    
+    transition: 0.5s ease-in; 
+       
+}
+
+#header-nav a:hover{
+    opacity: 0.7;
+}
+
+#logo:hover{
+    opacity: 0.7;
+    
+}
+
+#header-nav {
+    
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    background: rgb(49, 49, 49);
+    height: 20vh;
+    
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 1px;
+    margin-left: 32px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#logo{
+    max-width: 10;
+    max-height: 10;
+    
+    transition: ease-in 0.5s;
+}
+
+
+
+/*headerOptions%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5*/
+#header-options{
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    animation-name: "goUp";
+    -webkit-animation-play-state: paused;
+}
+
+#header-options nav{
+    background: rgb(49, 49, 49);
+    border-top: 10px solid rgb(49, 49, 49);
+    
+}
+
+#header-options nav li{
+    text-transform: uppercase;
+    padding: 0.5rem ;
+    
+    justify-content: space-around;
+    background: #000;
+    border-bottom: 4px solid  rgb(49, 49, 49);
+    
+    
+}
+
+#header-options nav a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+
+
+@keyframes goUp {
+    from {
+      transform: translateY(0);
+
+    }
+  
+    to {
+        transform: translateY(4rem);
+
+    }
+  }*/
+
+
+
