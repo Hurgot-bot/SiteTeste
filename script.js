@@ -22,7 +22,7 @@ function animateOptions() {
     menuLinks.forEach((link, index) => {
 
         setTimeout(() => {
-            link.style.display = "block";
+            link.style.display = "grid";
             console.log(link.textContent);
         }, 30 * index);
 
