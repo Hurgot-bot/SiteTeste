@@ -11,21 +11,23 @@
 </head>
 
 <body>
+    
+
     <header>
 
 
         <nav id="header-nav">
             <a id="logo">
                 <img id="logo-img" class="img" src="/logo.png" alt="" width="50" height="50">
-                <h2>Toca das Raposas</h2>
+                <h2>Foxes'den</h2>
             </a>
 
 
 
             <ul class="nav-list">
 
-                <li><a href="/">Logar</a></li>
-                <li><a href="/">Registrar</a></li>
+                <li id="login"><a >Login</a></li>
+                <li id="register"><a >Register</a></li>
             </ul>
         </nav>
 
@@ -34,9 +36,8 @@
         <div id="header-options">
             <nav>
                 <ul id="options-Nav">
-                    <li><a href="/">Noticias</a></li>
-                    <li><a href="/">Wiki</a></li>
-                    <li><a href="/">Usuarios</a></li>
+                    <li><a href="/">News</a></li>
+                    <li><a href="/">Users</a></li>
                 </ul>
             </nav>
 
@@ -48,41 +49,74 @@
 
     <main>
 
-
-
-
-        </div>
-
         <section id="main-page">
-            <h2>title</h2>
-            <h3>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, soluta, quas ipsam culpa repellat
-                beatae cumque ad mollitia delectus iusto explicabo. Itaque deleniti, officiis eligendi nihil quos
-                nesciunt dolores recusandae.
-            </h3>
+            <div id="main-block">
+                <h2>Welcome!</h2>
+                <h3>
+                    Our team, Toca das Raposas want to thank you for visiting our page
+                    <br>
+                    <br>
+                    Currently we're working on a game, and we kindly ask you to try it. Please press the button "Download" to download it.
+                </h3>
+
+
+                <a href="https://wallpapercave.com/download/cute-fox-wallpapers-wp2495499"><button>Download</button></a>
+            </div>
+                
         </section>
 
-        <section id="register-section">
 
-            <div class="input">
-                <label for="nome">Nome</label>
-                <input id="nome" type="text">
-            </div>
+        <div id="blur">
+            <section id="register-section" class="panel">
+                <form id="registerForm" action="">
+                    <h2>Registering</h2>
 
-            <div class="input"></div>
-            <label for="nome">Nome</label>
-            <input id="nome" type="text">
-            </div>
 
-            <div class="input">
-                <label for="nome">Nome</label>
-                <input id="nome" type="text">
-            </div>
+                    <div class="input">
+                        <label for="user">Username</label>
+                        <input id="user"  type="text" required>
+                    </div>
 
-            <input id="formBtn" type="submit">
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input id="password" type="text" required>
+                    </div>
 
-        </section>
+                    <div class="input">
+                        <label for="age">Age</label>
+                        <input id="age" type="number" required>
+                    </div>
 
+                    <div class="input">
+                        <label for="birth">Date of birth</label>
+                        <input id="birth" type="date" required>
+                    </div>
+
+                    <input id="formBtn" form="register" type="submit" value="Conclude">
+                </form>
+                    
+
+            </section>
+
+            <section id="login-section" class="panel">
+                <form id="loginForm" action="">
+                    <h2>Login</h2>
+
+
+                    <div class="input">
+                        <label for="user">Username</label>
+                        <input id="user"  type="text" required>
+                    </div>
+
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input id="password" type="text" required>
+                    </div>
+
+                    <input id="loginBtn" form="loginForm" type="submit" value="Conclude">
+                </form>
+            </section>
+        </div>
 
     </main>
 
