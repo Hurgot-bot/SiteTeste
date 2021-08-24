@@ -41,7 +41,7 @@ body {
 
 #header-nav li:hover {
     opacity: 0.8;
-    background-color: rgb(78, 52, 35);
+    background-color: rgb(77, 52, 36);
 }
 
 #logo:hover {
@@ -52,7 +52,7 @@ body {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    background: rgb(69, 85, 65);
+    background: rgb(0, 0, 0);
     height: 7vh;
 }
 
@@ -74,7 +74,7 @@ body {
     height: 100%;
     transition: ease-in 0.5s;
     display: flex;
-    background-color: rgb(160, 129, 73);
+    background-color: rgb(0, 0, 0);
     transition: 0.1s ease-in;
 }
 
@@ -84,7 +84,7 @@ body {
     text-transform: capitalize;
     letter-spacing: 1px;
     font-family: sans-serif;
-    color: orange;
+    color: rgb(245, 245, 245);
 }
 
 #logo:hover {
@@ -105,7 +105,7 @@ body {
 }
 
 #header-options nav {
-    border-top: 10px solid rgb(155, 107, 45);
+    border-top: 10px solid rgb(255, 255, 255);
 }
 
 #header-options nav li {
@@ -126,8 +126,9 @@ body {
 }
 
 #header-options nav li:hover {
-    background-color: rgb(114, 86, 67);
+    background-color: rgb(82, 82, 82);
     opacity: 0.7;
+    
 }
 
 @keyframes appear {
@@ -154,7 +155,7 @@ body {
 /*MainPage Content========================================================*/
 
 #main-block {
-    background-color: rgb(110, 110, 91);
+    background-color: rgb(255, 255, 255);
 }
 
 #main-page {
@@ -165,20 +166,21 @@ body {
     position: relative;
     width: 30%;
     opacity: 0.9;
+    z-index: -2;
 }
 
 #main-page h2 {
-    background-color: rgb(83, 83, 57);
-    border: 0.1rem solid orange;
+    background-color: rgb(255, 255, 255);
+    border: 0.1rem solid rgb(107, 102, 102);
     padding: 1rem;
 }
 
 #main-page h3 {
-    background-color: rgb(110, 110, 91);
+    background-color: rgb(255, 255, 255);
 }
 
 #main-page button {
-    background-color: rgb(151, 136, 80);
+    background-color: rgb(241, 241, 241);
     transform: translateY(-0.2rem);
     padding: 2rem;
     margin-top: 10px;
@@ -193,15 +195,14 @@ body {
 
 #register-section {
     text-align: center;
-    background: rgb(152, 168, 91);
     width: 40%;
-    margin-top: 5rem;
+
     margin-left: auto;
     margin-right: auto;
-    border: 0.2rem solid burlywood;
+    border: 0.2rem solid rgba(222, 184, 135, 0.678);
     background-color: rgb(240, 240, 202);
     position: relative;
-    top: 250px;
+    
     z-index: 1;
     display: none;
 }
@@ -236,14 +237,12 @@ input {
 
 #login-section {
     width: 25%;
-    margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 250px;
     z-index: 1;
     text-align: center;
-    background: rgb(255, 255, 255);
+    background: rgba(216, 203, 203, 0.438);
     display: none;
     overflow: auto;
 }
@@ -255,6 +254,7 @@ input {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    
     width: 25%;
     background: rgba(252, 248, 248, 0.6);
     border: 0.2rem solid black;
