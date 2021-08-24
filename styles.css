@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 
 body {
@@ -11,40 +10,34 @@ body {
     background: url(/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    /*background-size: cover;
-    background-position: center;
+    background-size: cover;
+    /*background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;*/
     backdrop-filter: blur(4px);
-   /* background-color: rgb(71, 99, 62);*/
+    /* background-color: rgb(71, 99, 62);*/
 }
 
-#blur.active{
+#blur.active {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(5, 5, 5,0.6);
-    backdrop-filter: blur(100px);
+    background-color: rgba(5, 5, 5, 0.6);
+    backdrop-filter: blur(10px);
     top: 7vh;
-    z-index: -1;
-    
-    
+    z-index: 0;
 }
 
 
 /*Header%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5*/
-
-
 
 #header-nav a {
     text-decoration: none;
     color: #fff;
     transition: 0.5s ease-in;
 }
-
-
 
 #header-nav li:hover {
     opacity: 0.8;
@@ -75,7 +68,6 @@ body {
     text-transform: uppercase;
     padding: 1rem;
     background: rgb(5, 5, 5);
-    
 }
 
 #logo {
@@ -85,22 +77,19 @@ body {
     background-color: rgb(160, 129, 73);
     transition: 0.1s ease-in;
 }
-#logo h2{
+
+#logo h2 {
     align-self: center;
     font-size: medium;
     text-transform: capitalize;
     letter-spacing: 1px;
     font-family: sans-serif;
     color: orange;
-    
 }
 
-#logo:hover{
-    
+#logo:hover {
     opacity: 0.7;
 }
-
-
 
 #borda {}
 
@@ -113,12 +102,10 @@ body {
     width: 100%;
     transition: 0.5s;
     z-index: 199;
-    
 }
 
 #header-options nav {
     border-top: 10px solid rgb(155, 107, 45);
-    
 }
 
 #header-options nav li {
@@ -133,14 +120,12 @@ body {
     display: none;
 }
 
-
 #header-options nav a {
     text-decoration: none;
     color: #fff;
 }
 
-
-#header-options nav li:hover{
+#header-options nav li:hover {
     background-color: rgb(114, 86, 67);
     opacity: 0.7;
 }
@@ -148,7 +133,6 @@ body {
 @keyframes appear {
     from {
         opacity: 0;
-        
     }
     to {
         opacity: 1;
@@ -165,44 +149,45 @@ body {
         width: 100%;
     }
 }
+
+
 /*MainPage Content========================================================*/
 
-#main-block{
+#main-block {
     background-color: rgb(110, 110, 91);
 }
 
-#main-page{
+#main-page {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 250px;
+    top: 200px;
     position: relative;
-    
     width: 30%;
     opacity: 0.9;
 }
 
-#main-page h2{
-    background-color: rgb(110, 110, 91);
-    padding: 2rem;
+#main-page h2 {
+    background-color: rgb(83, 83, 57);
+    border: 0.1rem solid orange;
+    padding: 1rem;
 }
 
-#main-page h3{
+#main-page h3 {
     background-color: rgb(110, 110, 91);
-    
-    
 }
 
-#main-page button{
+#main-page button {
     background-color: rgb(151, 136, 80);
     transform: translateY(-0.2rem);
     padding: 2rem;
     margin-top: 10px;
 }
 
-#main-page button:hover{
+#main-page button:hover {
     opacity: 0.7;
 }
+
 
 /*Register Section=-================================== da pra usar o transform y e o z index*/
 
@@ -214,60 +199,75 @@ body {
     margin-left: auto;
     margin-right: auto;
     border: 0.2rem solid burlywood;
-    background-color: rgb(110, 110, 91);
+    background-color: rgb(240, 240, 202);
     position: relative;
-    z-index: 0;
+    top: 250px;
+    z-index: 1;
     display: none;
-    
-    
-    
 }
 
 #register-section label {
     display: inline;
     font-family: sans-serif;
-    
 }
 
-#register-section input:focus{
+#register-section input:focus {
     outline: thin;
 }
 
-#registerForm{
-    
-}
+#registerForm {}
 
-.input {
+0input {
     padding: 0.5rem;
-    
 }
 
-.input label{
-    
-}
+.input label {}
 
 .input input {
     border: 0.1rem solid #000;
-    
 }
 
-#formBtn{
+#formBtn {
     padding: 0.2rem;
 }
 
 
 /*Login-section ========================================================*/
 
-#login-section{
+#login-section {
     width: 25%;
     margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: 0;
-    transform: translateY(20rem);
+    top: 250px;
+    z-index: 1;
     text-align: center;
     background: rgb(255, 255, 255);
     display: none;
+    overflow: auto;
 }
 
+
+/*USERS SECTIONS =================================*/
+
+#user-section {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    background: rgba(252, 248, 248, 0.6);
+    border: 0.2rem solid black;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+#user-section th {
+    border-bottom: 0.1rem solid black;
+}
+
+#user-section td:hover {
+    opacity: 0.7;
+}
